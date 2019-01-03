@@ -1,0 +1,10 @@
+C:\Users\hanif\source\CantelliPerelli\BLIP\bin\Debug\BLIP.exe.config
+C:\Users\hanif\source\CantelliPerelli\BLIP\bin\Debug\BLIP.exe
+C:\Users\hanif\source\CantelliPerelli\BLIP\bin\Debug\BLIP.pdb
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.csprojAssemblyReference.cache
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.Form1.resources
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.Properties.Resources.resources
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.csproj.GenerateResource.cache
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.csproj.CoreCompileInputs.cache
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.exe
+C:\Users\hanif\source\CantelliPerelli\BLIP\obj\Debug\BLIP.pdb
