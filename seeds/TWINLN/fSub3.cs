@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BELIT2
+namespace TWINLN
 {
-    public partial class fSub5 : Form
+    public partial class fSub3 : Form
     {
-        public fSub5()
+        public fSub3()
         {
             InitializeComponent();
         }

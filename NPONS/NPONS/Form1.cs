@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BELIT2
+namespace NPONS
 {
-    public partial class fSub3 : Form
+    public partial class Form1 : Form
     {
-        public fSub3()
+        public Form1()
         {
             InitializeComponent();
         }

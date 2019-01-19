@@ -12,26 +12,26 @@ namespace VUEX
 {
     public partial class fSub1 : Form
     {
-        private List<String> _columns = new List<String> { "VuexBusiness", "VuexKRDT", "VuexTeams", "VuexCommonDisplay", "VuexCommonData", "VuexNotification", "VuexCumnor", "VuexSelence", "VuexCogslever", "VuexDynamo", "VuexEdith", "VuexSolo", "VuexPresskit", "VuexFertile", "VuexBotService", "BORLNDTranscription", "SYBASEHideout", "SYBASETowers" };
-        private List<int> _count = new List<int> { 4, 2, 3, 4, 3, 6, 2, 5, 2, 4, 1, 2, 4, 2, 3, 4, 4, 3 };
-        private List<String> _col1 = new List<String> { "CortanaSkills", "EnterpriseMobility+Security", "SkypeForBusiness", "Windows", null, null };
-        private List<String> _col2 = new List<String> { "ASP.NET", "CommonDataService", null, null, null, null };
-        private List<String> _col3 = new List<String> { ".NET", "HealthBot", "MicrosoftTeams", null, null, null };
-        private List<String> _col4 = new List<String> { "BingAds", "HealthVault", "Microsoft365Enterprise", "SharePoint", null, null };
-        private List<String> _col5 = new List<String> { "FastTrackForMicrosoft365", "PlayReady", "VisualBasic", null, null, null };
-        private List<String> _col6 = new List<String> { "CognitiveToolkitCNTK", "InTune", "MicrosoftHPCPack2016", "PowerApps", "PowerBI", "VisualStudioIDE" };
-        private List<String> _col7 = new List<String> { "Virtualization", "Yammer", null, null, null, null };
-        private List<String> _col8 = new List<String> { "Azure", "BiztalkServer", "Kaizala", "PowerQuery", "SQLServer", null };
-        private List<String> _col9 = new List<String> { "AzureBotService", "MicrosoftFlow", null, null, null, null };
+        private List<String> _columns = new List<String> { "BORLNDTranscription", "SYBASEHideout", "SYBASETowers", "VuexBotService", "VuexBusiness", "VuexCogslever", "VuexCommonData", "VuexCommonDisplay", "VuexCumnor", "VuexDynamo", "VuexEdith", "VuexFertile", "VuexKRDT", "VuexNotification", "VuexPresskit", "VuexSelence", "VuexSolo", "VuexTeams" };
+        private List<int> _count = new List<int> { 4, 4, 3, 3, 4, 2, 3, 4, 2, 4, 1, 2, 2, 6, 4, 5, 2, 3 };
+        private List<String> _col1 = new List<String> { "EntityFramework", "MicrosoftSecurityResponseCentre", "PowerShell", "Xamarin", null, null };
+        private List<String> _col2 = new List<String> { "Exchange", "MicrosoftStream", "SystemCentre", "SystemCentreConfigurationManager", null, null };
+        private List<String> _col3 = new List<String> { "Dynamics365", "F#", "MicrosoftWorkplaceAnalyticsAndMyanalytics", null, null, null };
+        private List<String> _col4 = new List<String> { "C#", "MicrosoftQuantumDevelopment", "Office", null, null, null };
+        private List<String> _col5 = new List<String> { "CortanaSkills", "EnterpriseMobility+Security", "SkypeForBusiness", "Windows", null, null };
+        private List<String> _col6 = new List<String> { "AzureBotService", "MicrosoftFlow", null, null, null, null };
+        private List<String> _col7 = new List<String> { "FastTrackForMicrosoft365", "PlayReady", "VisualBasic", null, null, null };
+        private List<String> _col8 = new List<String> { "BingAds", "HealthVault", "Microsoft365Enterprise", "SharePoint", null, null };
+        private List<String> _col9 = new List<String> { "Virtualization", "Yammer", null, null, null, null };
         private List<String> _col10 = new List<String> { "AzureDevOps", "InternetInformationServices", "MicrosoftMachineLearningServer", "Project", null, null };
         private List<String> _col11 = new List<String> { "MicrosoftManagedDesktop", null, null, null, null, null };
-        private List<String> _col12 = new List<String> { "AzureIoTCentral", "OneDrive", null, null, null, null };
-        private List<String> _col13 = new List<String> { "DashboardServices", "Microsoft365Business", "NuGet", "VisualStudio", null, null };
-        private List<String> _col14 = new List<String> { "C++", "MicrosoftEducation", null, null, null, null };
-        private List<String> _col15 = new List<String> { "C#", "MicrosoftQuantumDevelopment", "Office", null, null, null };
-        private List<String> _col16 = new List<String> { "EntityFramework", "MicrosoftSecurityResponseCentre", "PowerShell", "Xamarin", null, null };
-        private List<String> _col17 = new List<String> { "Exchange", "MicrosoftStream", "SystemCentre", "SystemCentreConfigurationManager", null, null };
-        private List<String> _col18 = new List<String> { "Dynamics365", "F#", "MicrosoftWorkplaceAnalyticsAndMyanalytics", null, null, null };
+        private List<String> _col12 = new List<String> { "C++", "MicrosoftEducation", null, null, null, null };
+        private List<String> _col13 = new List<String> { "ASP.NET", "CommonDataService", null, null, null, null };
+        private List<String> _col14 = new List<String> { "CognitiveToolkitCNTK", "InTune", "MicrosoftHPCPack2016", "PowerApps", "PowerBI", "VisualStudioIDE" };
+        private List<String> _col15 = new List<String> { "DashboardServices", "Microsoft365Business", "NuGet", "VisualStudio", null, null };
+        private List<String> _col16 = new List<String> { "Azure", "BiztalkServer", "Kaizala", "PowerQuery", "SQLServer", null };
+        private List<String> _col17 = new List<String> { "AzureIoTCentral", "OneDrive", null, null, null, null };
+        private List<String> _col18 = new List<String> { ".NET", "HealthBot", "MicrosoftTeams", null, null, null };
         private List<String> _data = new List<string> { null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
         private List<int> _value1 = new List<int> { 0, 0, 0, 0, 0, 0 };
         private List<int> _value2 = new List<int> { 0, 0, 0, 0, 0, 0 };
@@ -172,13 +172,29 @@ namespace VUEX
             _data[mnItem - 1] = sText;
         }
 
+        private void fShow(int nMode)
+        {
+            tab1.Visible = false;
+            tab2.Visible = false;
+            if (nMode == 1)
+            {
+                tab1.Visible = true;
+            }
+            else
+            {
+                tab2.Visible = true;
+            }
+        }
         public fSub1()
         {
             InitializeComponent();
+            tab2.Left = tab1.Left;
+            tab2.Top = tab1.Top;
         }
 
         private void fSub1_Load(object sender, EventArgs e)
         {
+            fShow(1);
             fReset();
         }
 
@@ -316,6 +332,21 @@ namespace VUEX
         private void btnSave_Click(object sender, EventArgs e)
         {
             fSave(txtEntry.Text);
+        }
+
+        private void btnPage1_Click(object sender, EventArgs e)
+        {
+            fShow(1);
+        }
+
+        private void btnPage2_Click(object sender, EventArgs e)
+        {
+            fShow(2);
+        }
+
+        private void tab2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

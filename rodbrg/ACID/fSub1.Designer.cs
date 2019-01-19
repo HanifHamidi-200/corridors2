@@ -95,6 +95,22 @@
             this.pic51 = new System.Windows.Forms.PictureBox();
             this.pic61 = new System.Windows.Forms.PictureBox();
             this.pic71 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.picb35 = new System.Windows.Forms.PictureBox();
+            this.picb25 = new System.Windows.Forms.PictureBox();
+            this.picb15 = new System.Windows.Forms.PictureBox();
+            this.picb34 = new System.Windows.Forms.PictureBox();
+            this.picb24 = new System.Windows.Forms.PictureBox();
+            this.picb14 = new System.Windows.Forms.PictureBox();
+            this.picb33 = new System.Windows.Forms.PictureBox();
+            this.picb23 = new System.Windows.Forms.PictureBox();
+            this.picb13 = new System.Windows.Forms.PictureBox();
+            this.picb32 = new System.Windows.Forms.PictureBox();
+            this.picb22 = new System.Windows.Forms.PictureBox();
+            this.picb12 = new System.Windows.Forms.PictureBox();
+            this.picb11 = new System.Windows.Forms.PictureBox();
+            this.picb31 = new System.Windows.Forms.PictureBox();
+            this.picb21 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic78)).BeginInit();
@@ -160,17 +176,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic61)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic71)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picb35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb21)).BeginInit();
             this.SuspendLayout();
             // 
             // btnQNext
             // 
             this.btnQNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnQNext.Location = new System.Drawing.Point(667, 12);
+            this.btnQNext.Location = new System.Drawing.Point(804, 12);
             this.btnQNext.Name = "btnQNext";
             this.btnQNext.Size = new System.Drawing.Size(99, 86);
             this.btnQNext.TabIndex = 5;
             this.btnQNext.Text = "&QNext";
             this.btnQNext.UseVisualStyleBackColor = false;
+            this.btnQNext.Click += new System.EventHandler(this.btnQNext_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -902,15 +935,200 @@
             this.pic71.TabIndex = 8;
             this.pic71.TabStop = false;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.71429F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.28571F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66F));
+            this.tableLayoutPanel2.Controls.Add(this.picb35, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.picb25, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.picb15, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.picb34, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.picb24, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.picb14, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.picb33, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.picb23, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.picb13, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.picb32, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.picb22, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.picb12, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.picb11, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.picb31, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.picb21, 1, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(567, 12);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.34884F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.65116F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 253);
+            this.tableLayoutPanel2.TabIndex = 6;
+            // 
+            // picb35
+            // 
+            this.picb35.Image = ((System.Drawing.Image)(resources.GetObject("picb35.Image")));
+            this.picb35.Location = new System.Drawing.Point(128, 208);
+            this.picb35.Name = "picb35";
+            this.picb35.Size = new System.Drawing.Size(42, 31);
+            this.picb35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb35.TabIndex = 37;
+            this.picb35.TabStop = false;
+            // 
+            // picb25
+            // 
+            this.picb25.Image = ((System.Drawing.Image)(resources.GetObject("picb25.Image")));
+            this.picb25.Location = new System.Drawing.Point(73, 208);
+            this.picb25.Name = "picb25";
+            this.picb25.Size = new System.Drawing.Size(35, 31);
+            this.picb25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb25.TabIndex = 36;
+            this.picb25.TabStop = false;
+            // 
+            // picb15
+            // 
+            this.picb15.Image = ((System.Drawing.Image)(resources.GetObject("picb15.Image")));
+            this.picb15.Location = new System.Drawing.Point(3, 208);
+            this.picb15.Name = "picb15";
+            this.picb15.Size = new System.Drawing.Size(42, 31);
+            this.picb15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb15.TabIndex = 35;
+            this.picb15.TabStop = false;
+            // 
+            // picb34
+            // 
+            this.picb34.Image = ((System.Drawing.Image)(resources.GetObject("picb34.Image")));
+            this.picb34.Location = new System.Drawing.Point(128, 154);
+            this.picb34.Name = "picb34";
+            this.picb34.Size = new System.Drawing.Size(42, 31);
+            this.picb34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb34.TabIndex = 29;
+            this.picb34.TabStop = false;
+            // 
+            // picb24
+            // 
+            this.picb24.Image = ((System.Drawing.Image)(resources.GetObject("picb24.Image")));
+            this.picb24.Location = new System.Drawing.Point(73, 154);
+            this.picb24.Name = "picb24";
+            this.picb24.Size = new System.Drawing.Size(35, 31);
+            this.picb24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb24.TabIndex = 28;
+            this.picb24.TabStop = false;
+            // 
+            // picb14
+            // 
+            this.picb14.Image = ((System.Drawing.Image)(resources.GetObject("picb14.Image")));
+            this.picb14.Location = new System.Drawing.Point(3, 154);
+            this.picb14.Name = "picb14";
+            this.picb14.Size = new System.Drawing.Size(42, 31);
+            this.picb14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb14.TabIndex = 27;
+            this.picb14.TabStop = false;
+            // 
+            // picb33
+            // 
+            this.picb33.Image = ((System.Drawing.Image)(resources.GetObject("picb33.Image")));
+            this.picb33.Location = new System.Drawing.Point(128, 105);
+            this.picb33.Name = "picb33";
+            this.picb33.Size = new System.Drawing.Size(42, 31);
+            this.picb33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb33.TabIndex = 21;
+            this.picb33.TabStop = false;
+            // 
+            // picb23
+            // 
+            this.picb23.Image = ((System.Drawing.Image)(resources.GetObject("picb23.Image")));
+            this.picb23.Location = new System.Drawing.Point(73, 105);
+            this.picb23.Name = "picb23";
+            this.picb23.Size = new System.Drawing.Size(35, 31);
+            this.picb23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb23.TabIndex = 20;
+            this.picb23.TabStop = false;
+            // 
+            // picb13
+            // 
+            this.picb13.Image = ((System.Drawing.Image)(resources.GetObject("picb13.Image")));
+            this.picb13.Location = new System.Drawing.Point(3, 105);
+            this.picb13.Name = "picb13";
+            this.picb13.Size = new System.Drawing.Size(42, 31);
+            this.picb13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb13.TabIndex = 19;
+            this.picb13.TabStop = false;
+            // 
+            // picb32
+            // 
+            this.picb32.Image = ((System.Drawing.Image)(resources.GetObject("picb32.Image")));
+            this.picb32.Location = new System.Drawing.Point(128, 49);
+            this.picb32.Name = "picb32";
+            this.picb32.Size = new System.Drawing.Size(42, 31);
+            this.picb32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb32.TabIndex = 13;
+            this.picb32.TabStop = false;
+            // 
+            // picb22
+            // 
+            this.picb22.Image = ((System.Drawing.Image)(resources.GetObject("picb22.Image")));
+            this.picb22.Location = new System.Drawing.Point(73, 49);
+            this.picb22.Name = "picb22";
+            this.picb22.Size = new System.Drawing.Size(35, 31);
+            this.picb22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb22.TabIndex = 12;
+            this.picb22.TabStop = false;
+            // 
+            // picb12
+            // 
+            this.picb12.Image = ((System.Drawing.Image)(resources.GetObject("picb12.Image")));
+            this.picb12.Location = new System.Drawing.Point(3, 49);
+            this.picb12.Name = "picb12";
+            this.picb12.Size = new System.Drawing.Size(42, 31);
+            this.picb12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb12.TabIndex = 11;
+            this.picb12.TabStop = false;
+            // 
+            // picb11
+            // 
+            this.picb11.Image = ((System.Drawing.Image)(resources.GetObject("picb11.Image")));
+            this.picb11.Location = new System.Drawing.Point(3, 3);
+            this.picb11.Name = "picb11";
+            this.picb11.Size = new System.Drawing.Size(42, 31);
+            this.picb11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb11.TabIndex = 0;
+            this.picb11.TabStop = false;
+            // 
+            // picb31
+            // 
+            this.picb31.Image = ((System.Drawing.Image)(resources.GetObject("picb31.Image")));
+            this.picb31.Location = new System.Drawing.Point(128, 3);
+            this.picb31.Name = "picb31";
+            this.picb31.Size = new System.Drawing.Size(42, 31);
+            this.picb31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb31.TabIndex = 2;
+            this.picb31.TabStop = false;
+            // 
+            // picb21
+            // 
+            this.picb21.Image = ((System.Drawing.Image)(resources.GetObject("picb21.Image")));
+            this.picb21.Location = new System.Drawing.Point(73, 3);
+            this.picb21.Name = "picb21";
+            this.picb21.Size = new System.Drawing.Size(35, 31);
+            this.picb21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picb21.TabIndex = 1;
+            this.picb21.TabStop = false;
+            // 
             // fSub1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1019, 450);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.btnQNext);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fSub1";
             this.Text = "ACID";
+            this.Load += new System.EventHandler(this.fSub1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic78)).EndInit();
@@ -976,6 +1194,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic61)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic71)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picb35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picb21)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1048,5 +1282,21 @@
         private System.Windows.Forms.PictureBox pic51;
         private System.Windows.Forms.PictureBox pic61;
         private System.Windows.Forms.PictureBox pic71;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.PictureBox picb35;
+        private System.Windows.Forms.PictureBox picb25;
+        private System.Windows.Forms.PictureBox picb15;
+        private System.Windows.Forms.PictureBox picb34;
+        private System.Windows.Forms.PictureBox picb24;
+        private System.Windows.Forms.PictureBox picb14;
+        private System.Windows.Forms.PictureBox picb33;
+        private System.Windows.Forms.PictureBox picb23;
+        private System.Windows.Forms.PictureBox picb13;
+        private System.Windows.Forms.PictureBox picb32;
+        private System.Windows.Forms.PictureBox picb22;
+        private System.Windows.Forms.PictureBox picb12;
+        private System.Windows.Forms.PictureBox picb11;
+        private System.Windows.Forms.PictureBox picb31;
+        private System.Windows.Forms.PictureBox picb21;
     }
 }

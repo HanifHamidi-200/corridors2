@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BELIT2
+namespace TWINLN
 {
     public partial class fSub2 : Form
     {

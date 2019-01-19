@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BELIT2
 {
-    public partial class fSub4 : Form
+    public partial class fForms : Form
     {
-        public fSub4()
+        public fForms()
         {
             InitializeComponent();
         }

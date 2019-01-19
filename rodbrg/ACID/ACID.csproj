@@ -97,5 +97,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\F blank.png" />
+    <Content Include="icons\F col1.png" />
+    <Content Include="icons\F col2.png" />
+    <Content Include="icons\F col3.png" />
+    <Content Include="icons\F col4.png" />
+    <Content Include="icons\F col5.png" />
+    <Content Include="icons\F col6.png" />
+    <Content Include="icons\F NullGate.png" />
+    <Content Include="icons\F spanner.png" />
+    <Content Include="icons\F target.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

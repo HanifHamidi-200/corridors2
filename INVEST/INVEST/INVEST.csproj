@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>F spark.ico</ApplicationIcon>
+    <ApplicationIcon>F setsquare.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>AEA0307DF531B887867BE30F99F83902F8DF3CC7</ManifestCertificateThumbprint>
@@ -176,6 +176,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="F blackbrowntechnology.ico" />
+    <Content Include="F setsquare.ico" />
     <Content Include="F spark.ico" />
     <Content Include="icons2\F back1.png" />
     <Content Include="icons2\F back2.png" />
