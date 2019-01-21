@@ -112,72 +112,79 @@
             // 
             // btn1
             // 
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn1.Location = new System.Drawing.Point(3, 3);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(125, 29);
             this.btn1.TabIndex = 1;
             this.btn1.Text = "RobotsAdhere";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn2.Location = new System.Drawing.Point(3, 38);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(125, 29);
             this.btn2.TabIndex = 2;
             this.btn2.Text = "BanksAdhere";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button3.Location = new System.Drawing.Point(3, 73);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(125, 44);
             this.button3.TabIndex = 3;
             this.button3.Text = "WorkingCompaniesAdhere";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Lime;
             this.button4.Location = new System.Drawing.Point(3, 123);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(125, 29);
             this.button4.TabIndex = 4;
             this.button4.Text = "Gerrick";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button5.Location = new System.Drawing.Point(3, 158);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 29);
             this.button5.TabIndex = 5;
             this.button5.Text = "Mountains";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button6.Location = new System.Drawing.Point(3, 193);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(125, 29);
             this.button6.TabIndex = 6;
             this.button6.Text = "Technology\r\n";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button7.Location = new System.Drawing.Point(3, 228);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 29);
             this.button7.TabIndex = 7;
             this.button7.Text = "Plan";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // fSub2
