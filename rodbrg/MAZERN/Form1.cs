@@ -16,14 +16,39 @@ namespace MAZERN
         private String msShuffle2;
         private String msRotate;
         private int mnItem = 1;
+        private int mnCol, mnRow,mnRotate;
+        private bool mbShow;
 
         private void fClick(int nCol, int nRow)
         {
-            String sTwo = "0" + Convert.ToString(mnItem);
-            int nPos = (nCol - 1) * 8 + nRow;
+            Random rnd1 = new Random();
+            String sTwo;
+            int nPos;
 
-            fPlace(sTwo, nPos);
-            fUpdateDisplay();
+            if (mbShow)
+            {
+
+
+                mnCol = nCol;
+                mnRow = nRow;
+                mnRotate = rnd1.Next(1, 5);
+                mbShow = true;
+
+                fUpdateDisplay();
+            }
+            else
+            {
+                mnCol = nCol;
+                mnRow = nRow;
+                nPos = (nCol - 1) * 8 + nRow;
+                sTwo = Convert.ToString(mnItem);
+                if (sTwo.Length == 1)
+                {
+                    sTwo = "0" + sTwo;
+                }
+                fPlace(sTwo, nPos);
+                fUpdateDisplay();
+            }
         }
 
         private bool fClear(int nCol, int nRow)
@@ -92,11 +117,11 @@ namespace MAZERN
 
             if (nMode == 1)
             {
-                nValue = rnd1.Next(2, 5);
+                nValue = rnd1.Next(3, 6);
             }
             else
             {
-                nValue = rnd1.Next(5, 8);
+                nValue = rnd1.Next(6, 9);
             }
 
             sTwo = "0" + Convert.ToString(nValue);
@@ -116,6 +141,8 @@ namespace MAZERN
 
             msShuffle = "01020304050607080910111213141516171819202122232425262728293021323334353637383940414243444546474849505152535455565758596061626364";
             msShuffle2 = null;
+            mbShow = false;
+
 
             for (int i = 1; i <= 64; i++)
             {
@@ -218,42 +245,120 @@ namespace MAZERN
             PictureBox picture2 = new PictureBox
             {
                 Name = "pictureBox2",
-                Image = Image.FromFile(@"F Type1A.png"),
+                Image = Image.FromFile(@"F arrow.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture3 = new PictureBox
             {
                 Name = "pictureBox3",
-                Image = Image.FromFile(@"F Type1B.png"),
+                Image = Image.FromFile(@"F Type1A.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture4 = new PictureBox
             {
                 Name = "pictureBox4",
-                Image = Image.FromFile(@"F Type1C.png"),
+                Image = Image.FromFile(@"F Type1B.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture5 = new PictureBox
             {
                 Name = "pictureBox5",
-                Image = Image.FromFile(@"F Type2A.png"),
+                Image = Image.FromFile(@"F Type1C.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture6 = new PictureBox
             {
                 Name = "pictureBox6",
-                Image = Image.FromFile(@"F Type2B.png"),
+                Image = Image.FromFile(@"F Type2A.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture7 = new PictureBox
             {
                 Name = "pictureBox7",
-                Image = Image.FromFile(@"F Type2C.png"),
+                Image = Image.FromFile(@"F Type2B.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
             PictureBox picture8 = new PictureBox
             {
                 Name = "pictureBox8",
+                Image = Image.FromFile(@"F Type2C.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture9 = new PictureBox
+            {
+                Name = "pictureBox9",
+                Image = Image.FromFile(@"F Type3A.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture10 = new PictureBox
+            {
+                Name = "pictureBox10",
+                Image = Image.FromFile(@"F Type3B.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture11 = new PictureBox
+            {
+                Name = "pictureBox11",
+                Image = Image.FromFile(@"F Type3C.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture12 = new PictureBox
+            {
+                Name = "pictureBox12",
+                Image = Image.FromFile(@"F Type4A.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture13 = new PictureBox
+            {
+                Name = "pictureBox13",
+                Image = Image.FromFile(@"F Type4B.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture14 = new PictureBox
+            {
+                Name = "pictureBox14",
+                Image = Image.FromFile(@"F Type4C.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture15 = new PictureBox
+            {
+                Name = "pictureBox15",
+                Image = Image.FromFile(@"F Type5A.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture16 = new PictureBox
+            {
+                Name = "pictureBox16",
+                Image = Image.FromFile(@"F Type5B.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture17 = new PictureBox
+            {
+                Name = "pictureBox17",
+                Image = Image.FromFile(@"F Type5C.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture18 = new PictureBox
+            {
+                Name = "pictureBox18",
+                Image = Image.FromFile(@"F Type6A.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture19 = new PictureBox
+            {
+                Name = "pictureBox19",
+                Image = Image.FromFile(@"F Type6B.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture20 = new PictureBox
+            {
+                Name = "pictureBox20",
+                Image = Image.FromFile(@"F Type6C.png"),
+                SizeMode = PictureBoxSizeMode.StretchImage
+            };
+            PictureBox picture21 = new PictureBox
+            {
+                Name = "pictureBox21",
                 Image = Image.FromFile(@"F NullGate.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
@@ -281,8 +386,47 @@ namespace MAZERN
                 case 7:
                     _pic2 = picture7;
                     break;
-                default:
+                case 8:
                     _pic2 = picture8;
+                    break;
+                case 9:
+                    _pic2 = picture9;
+                    break;
+                case 10:
+                    _pic2 = picture10;
+                    break;
+                case 11:
+                    _pic2 = picture11;
+                    break;
+                case 12:
+                    _pic2 = picture12;
+                    break;
+                case 13:
+                    _pic2 = picture13;
+                    break;
+                case 14:
+                    _pic2 = picture14;
+                    break;
+                case 15:
+                    _pic2 = picture15;
+                    break;
+                case 16:
+                    _pic2 = picture16;
+                    break;
+                case 17:
+                    _pic2 = picture17;
+                    break;
+                case 18:
+                    _pic2 = picture18;
+                    break;
+                case 19:
+                    _pic2 = picture19;
+                    break;
+                case 20:
+                    _pic2 = picture20;
+                    break;
+                default:
+                    _pic2 = picture21;
                     break;
             }
             for (int i = 1; i <= nRotate - 1; i++)
@@ -506,7 +650,722 @@ namespace MAZERN
             fPeek(nType, nRotate, ref _pic);
             pic88.Image = _pic.Image;
 
+            if (mbShow)
+            {
+                fIcon();
+                fUpdateStatus();
+            }
         }
+
+        private void fUpdateStatus()
+        {
+            String sCoord = Convert.ToString(mnCol) + Convert.ToString(mnRow);
+            String sText = "typeof(" + sCoord + ") = ";
+            int nPos = (mnCol - 1) * 8 + mnRow;
+            int nRotate = 0, nRotateSave;
+            int nType = fHoletype2(msShuffle2, nPos,ref nRotate);
+            int nCol = mnCol;
+            int nRow = mnRow;
+            String sType,sType2,sText3;
+            
+
+            switch (nType)
+            {
+                case 3:
+                    sType = "EdgeNorth";
+                    break;
+                case 4:
+                    sType = "EdgeNorth";
+                    break;
+                case 5:
+                    sType = "EdgeNorth";
+                    break;
+                case 6:
+                    sType = "SQUARE";
+                    break;
+                case 7:
+                    sType = "SQUARE";
+                    break;
+                case 8:
+                    sType = "SQUARE";
+                    break;
+                case 9:
+                    sType = "CORRIDOREdge";
+                    break;
+                case 10:
+                    sType = "CORRIDOREdge";
+                    break;
+                default:
+                    sType = "CORRIDOREdge";
+                    break;
+            }
+            if (sType == "EdgeNorth")
+            {
+                 switch (nRotate)
+                {
+                    case 1:
+                        switch (mnRotate)
+                        {
+                            case 1:
+                                break;
+                            case 3:
+                                break;
+                            default:
+                                sType = "EdgeTurn";
+                                break;
+                        }
+                        break;
+                    case 3:
+                        switch (mnRotate)
+                        {
+                            case 1:
+                                break;
+                            case 3:
+                                break;
+                            default:
+                                sType = "EdgeTurn";
+                                break;
+                        }
+                         break;
+                    default:
+                        switch (mnRotate)
+                        {
+                            case 2:
+                                break;
+                            case 4:
+                                break;
+                            default:
+                                sType = "EdgeTurn";
+                                break;
+                        }
+                         break;
+                }
+            }
+            if (sType == "CORRIDOREdge")
+            {
+                switch (nRotate)
+                {
+                    case 1:
+                        switch (mnRotate)
+                        {
+                            case 2:
+                                break;
+                            case 4:
+                                break;
+                            default:
+                                sType = "CORRIDORInside";
+                                break;
+                        }
+                        break;
+                    case 3:
+                        switch (mnRotate)
+                        {
+                            case 2:
+                                break;
+                            case 4:
+                                break;
+                            default:
+                                sType = "CORRIDORInside";
+                                break;
+                        }
+                        break;
+                    default:
+                        switch (mnRotate)
+                        {
+                            case 1:
+                                break;
+                            case 3:
+                                break;
+                            default:
+                                sType = "CORRIDORInside";
+                                break;
+                        }
+                        break;
+                }
+            }
+            sText = sText + sType;
+
+            lbl1.Text = sText;
+
+            nRotateSave = nRotate;
+            fNext(mnRotate, ref nCol, ref nRow);
+            sCoord = Convert.ToString(nCol) + Convert.ToString(nRow);
+            sText = "typeof(" + sCoord + ") = ";
+            nPos = (nCol - 1) * 8 + nRow;
+            nType = fHoletype2(msShuffle2, nPos, ref nRotate);
+
+
+            switch (nType)
+            {
+                case 3:
+                    sType2 = "EdgeNorth";
+                    break;
+                case 4:
+                    sType2 = "EdgeNorth";
+                    break;
+                case 5:
+                    sType2 = "EdgeNorth";
+                    break;
+                case 6:
+                    sType2 = "SQUARE";
+                    break;
+                case 7:
+                    sType2 = "SQUARE";
+                    break;
+                case 8:
+                    sType2 = "SQUARE";
+                    break;
+                case 9:
+                    sType2 = "CORRIDOREdge";
+                    break;
+                case 10:
+                    sType2 = "CORRIDOREdge";
+                    break;
+                default:
+                    sType2 = "CORRIDOREdge";
+                    break;
+            }
+            
+            if (sType2 == "EdgeNorth")
+            {
+                switch (nRotate)
+                {
+                    case 1:
+                        switch (mnRotate)
+                        {
+                            case 1:
+                                break;
+                            case 3:
+                                break;
+                            default:
+                                sType2 = "EdgeTurn";
+                                break;
+                        }
+                        break;
+                    case 3:
+                        switch (mnRotate)
+                        {
+                            case 1:
+                                break;
+                            case 3:
+                                break;
+                            default:
+                                sType2 = "EdgeTurn";
+                                break;
+                        }
+                        break;
+                    default:
+                        switch (mnRotate)
+                        {
+                            case 2:
+                                break;
+                            case 4:
+                                break;
+                            default:
+                                sType2 = "EdgeTurn";
+                                break;
+                        }
+                        break;
+                }
+            }
+            if (sType2 == "CORRIDOREdge")
+            {
+                switch (nRotate)
+                {
+                    case 1:
+                        switch (mnRotate)
+                        {
+                            case 2:
+                                break;
+                            case 4:
+                                break;
+                            default:
+                                sType2 = "CORRIDORInside";
+                                break;
+                        }
+                        break;
+                    case 3:
+                        switch (mnRotate)
+                        {
+                            case 2:
+                                break;
+                            case 4:
+                                break;
+                            default:
+                                sType2 = "CORRIDORInside";
+                                break;
+                        }
+                        break;
+                    default:
+                        switch (mnRotate)
+                        {
+                            case 1:
+                                break;
+                            case 3:
+                                break;
+                            default:
+                                sType2 = "CORRIDORInside";
+                                break;
+                        }
+                        break;
+                }
+            }
+            sText = sText + sType2;
+            lbl2.Text = sText;
+
+            sText3 = fFix(sType, sType2);
+            lbl3.Text = "fix = " + sText3;
+            
+            
+        }
+
+        private String fFix(String sText1,String sText2)
+        {
+            String sText3=null;
+
+            if (sText1 == "SQUARE")
+            {
+                if (sText2 == "SQUARE")
+                {
+                    sText3 = "TWOFold";
+                }
+                else if(sText2 == "EdgeNorth")
+                {
+                    sText3 = "EdgeNorth+CORR";
+                }
+                else if (sText2 == "EdgeTurn")
+                {
+                    sText3 = "EdgeNorth+LP";
+                }
+                else if (sText2 == "CORRIDOREdge")
+                {
+                    sText3 = "EdgeNorth+TP";
+                }
+                else
+                {
+                    sText3 = "NONE";
+                }
+            }
+            else if (sText1 == "EdgeNorth")
+            {
+                if (sText2 == "SQUARE")
+                {
+                    sText3 = "CORR+EdgeNorth";
+                }
+                else if (sText2 == "EdgeNorth")
+                {
+                    sText3 = "CORR2";
+                }
+                else if (sText2 == "EdgeTurn")
+                {
+                    sText3 = "CORR+LP";
+                }
+                else if (sText2 == "CORRIDOREdge")
+                {
+                    sText3 = "CORR+TP";
+                }
+                else
+                {
+                    sText3 = "NONE";
+                }
+            }
+            else if (sText1 == "EdgeTurn")
+            {
+                if (sText2 == "SQUARE")
+                {
+                    sText3 = "LP+EdgeNorth";
+                }
+                else if (sText2 == "EdgeNorth")
+                {
+                    sText3 = "LP+CORR";
+                }
+                else if (sText2 == "EdgeTurn")
+                {
+                    sText3 = "LP2";
+                }
+                else if (sText2 == "CORRIDOREdge")
+                {
+                    sText3 = "LP+TP";
+                }
+                else
+                {
+                    sText3 = "NONE";
+                }
+            }
+            else if (sText1 == "CORRIDOREdge")
+            {
+                if (sText2 == "SQUARE")
+                {
+                    sText3 = "TP+EdgeNorth";
+                }
+                else if (sText2 == "EdgeNorth")
+                {
+                    sText3 = "TP+CORR";
+                }
+                else if (sText2 == "EdgeTurn")
+                {
+                    sText3 = "TP+LP";
+                }
+                else if (sText2 == "CORRIDOREdge")
+                {
+                    sText3 = "TP2";
+                }
+                else
+                {
+                    sText3 = "NONE";
+                }
+            }
+            else
+            {
+                sText3 = "NONE";
+            }
+
+            return sText3;
+        }
+
+        private void fNext(int nRotate,ref int nCol,ref int nRow)
+        {
+            switch (nRotate)
+            {
+                case 1:
+                    nRow -= 1;
+                    if (nRow == 0)
+                    {
+                        nRow = 8;
+                    }
+                    break;
+                case 2:
+                    nCol += 1;
+                    if (nCol == 9)
+                    {
+                        nCol = 1;
+                    }
+                    break;
+                case 3:
+                    nRow += 1;
+                    if (nRow == 9)
+                    {
+                        nRow = 1;
+                    }
+                    break;
+                default:
+                    nCol -= 1;
+                    if (nCol == 0)
+                    {
+                        nCol = 8;
+                    }
+                    break;
+            }
+        }
+
+
+        private void fIcon()
+        {
+            PictureBox _pic = new PictureBox();
+            int nType = 2;
+            int nRotate = mnRotate;
+
+            switch (mnCol)
+            {
+                case 1:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic11.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic12.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic13.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic14.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic15.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic16.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic17.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic18.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                case 2:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic21.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic22.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic23.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic24.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic25.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic26.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic27.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic28.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                case 3:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic31.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic32.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic33.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic34.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic35.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic36.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic37.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic38.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                case 4:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic41.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic42.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic43.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic44.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic45.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic46.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic47.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic48.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                case 5:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic51.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic52.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic53.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic54.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic55.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic56.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic57.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic58.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                case 6:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic61.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic62.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic63.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic64.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic65.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic66.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic67.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic68.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                case 7:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic71.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic72.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic73.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic74.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic75.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic76.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic77.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic78.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+                default:
+                    switch (mnRow)
+                    {
+                        case 1:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic81.Image = _pic.Image;
+                            break;
+                        case 2:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic82.Image = _pic.Image;
+                            break;
+                        case 3:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic83.Image = _pic.Image;
+                            break;
+                        case 4:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic84.Image = _pic.Image;
+                            break;
+                        case 5:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic85.Image = _pic.Image;
+                            break;
+                        case 6:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic86.Image = _pic.Image;
+                            break;
+                        case 7:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic87.Image = _pic.Image;
+                            break;
+                        default:
+                            fPeek(nType, nRotate, ref _pic);
+                            pic88.Image = _pic.Image;
+                            break;
+                    }
+                    break;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -836,6 +1695,141 @@ namespace MAZERN
         private void pic86_Click(object sender, EventArgs e)
         {
             fClick(8, 6);
+        }
+
+        private void BtnRotate_Click(object sender, EventArgs e)
+        {
+            int nType, nRotate=0;
+            int nPos=(mnCol-1)*8+mnRow;
+            String sTwo;
+
+            if (mbShow)
+            {
+                mnRotate++;
+                if (mnRotate == 5)
+                {
+                    mnRotate = 1;
+                }
+                fIcon();
+                fUpdateStatus();
+            }
+            else
+            {
+                nType = fHoletype2(msShuffle2, nPos, ref nRotate);
+                nRotate++;
+                if (nRotate == 5)
+                {
+                    nRotate = 1;
+                }
+                sTwo = "0" + Convert.ToString(nRotate);
+                fPlace2(sTwo, nPos);
+                fUpdateDisplay();
+            }
+        }
+
+        private void BtnSelect_Click(object sender, EventArgs e)
+        {
+            if (mbShow)
+            {
+                mbShow = false;
+                btnSelect.Text = "select = OFF";
+            }
+            else
+            {
+                mbShow = true;
+                btnSelect.Text = "select = ON";
+            }
+            fUpdateDisplay();
+        }
+
+        private void PicAdd12_Click(object sender, EventArgs e)
+        {
+            mnItem = 12;
+
+        }
+
+        private void PicAdd13_Click(object sender, EventArgs e)
+        {
+            mnItem = 13;
+
+        }
+
+        private void PicAdd14_Click(object sender, EventArgs e)
+        {
+            mnItem = 14;
+
+        }
+
+        private void PicAdd15_Click(object sender, EventArgs e)
+        {
+            mnItem = 15;
+
+        }
+
+        private void PicAdd16_Click(object sender, EventArgs e)
+        {
+            mnItem = 16;
+
+        }
+
+        private void PicAdd17_Click(object sender, EventArgs e)
+        {
+            mnItem = 17;
+
+        }
+
+        private void PicAdd18_Click(object sender, EventArgs e)
+        {
+            mnItem = 18;
+
+        }
+
+        private void PicAdd19_Click(object sender, EventArgs e)
+        {
+            mnItem = 19;
+
+        }
+
+        private void PicAdd20_Click(object sender, EventArgs e)
+        {
+            mnItem = 20;
+
+        }
+
+        private void PicAdd3_Click(object sender, EventArgs e)
+        {
+            mnItem = 3;
+
+        }
+
+        private void PicAdd4_Click(object sender, EventArgs e)
+        {
+            mnItem = 4;
+
+        }
+
+        private void PicAdd5_Click(object sender, EventArgs e)
+        {
+            mnItem = 5;
+
+        }
+
+        private void PicAdd9_Click(object sender, EventArgs e)
+        {
+            mnItem = 9;
+
+        }
+
+        private void PicAdd10_Click(object sender, EventArgs e)
+        {
+            mnItem = 10;
+
+        }
+
+        private void PicAdd11_Click(object sender, EventArgs e)
+        {
+            mnItem = 11;
+
         }
 
         private void pic87_Click(object sender, EventArgs e)

@@ -34,7 +34,6 @@
             this.pic48 = new System.Windows.Forms.PictureBox();
             this.pic38 = new System.Windows.Forms.PictureBox();
             this.pic28 = new System.Windows.Forms.PictureBox();
-            this.pic18 = new System.Windows.Forms.PictureBox();
             this.pic57 = new System.Windows.Forms.PictureBox();
             this.pic47 = new System.Windows.Forms.PictureBox();
             this.pic37 = new System.Windows.Forms.PictureBox();
@@ -78,7 +77,6 @@
             this.pic82 = new System.Windows.Forms.PictureBox();
             this.pic63 = new System.Windows.Forms.PictureBox();
             this.pic73 = new System.Windows.Forms.PictureBox();
-            this.pic83 = new System.Windows.Forms.PictureBox();
             this.pic64 = new System.Windows.Forms.PictureBox();
             this.pic74 = new System.Windows.Forms.PictureBox();
             this.pic84 = new System.Windows.Forms.PictureBox();
@@ -92,20 +90,40 @@
             this.pic77 = new System.Windows.Forms.PictureBox();
             this.pic87 = new System.Windows.Forms.PictureBox();
             this.pic88 = new System.Windows.Forms.PictureBox();
-            this.pic78 = new System.Windows.Forms.PictureBox();
             this.pic68 = new System.Windows.Forms.PictureBox();
+            this.pic18 = new System.Windows.Forms.PictureBox();
+            this.pic78 = new System.Windows.Forms.PictureBox();
+            this.pic83 = new System.Windows.Forms.PictureBox();
             this.btnQNext = new System.Windows.Forms.Button();
             this.btnAdd1 = new System.Windows.Forms.Button();
-            this.btnAdd2 = new System.Windows.Forms.Button();
-            this.btnAdd3 = new System.Windows.Forms.Button();
-            this.btnAdd4 = new System.Windows.Forms.Button();
-            this.btnAdd5 = new System.Windows.Forms.Button();
+            this.btnRotate = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnJoin = new System.Windows.Forms.Button();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.picAdd12 = new System.Windows.Forms.PictureBox();
+            this.picAdd13 = new System.Windows.Forms.PictureBox();
+            this.picAdd14 = new System.Windows.Forms.PictureBox();
+            this.picAdd15 = new System.Windows.Forms.PictureBox();
+            this.picAdd16 = new System.Windows.Forms.PictureBox();
+            this.picAdd17 = new System.Windows.Forms.PictureBox();
+            this.picAdd18 = new System.Windows.Forms.PictureBox();
+            this.picAdd19 = new System.Windows.Forms.PictureBox();
+            this.picAdd20 = new System.Windows.Forms.PictureBox();
+            this.picAdd3 = new System.Windows.Forms.PictureBox();
+            this.picAdd4 = new System.Windows.Forms.PictureBox();
+            this.picAdd5 = new System.Windows.Forms.PictureBox();
+            this.picAdd9 = new System.Windows.Forms.PictureBox();
+            this.picAdd10 = new System.Windows.Forms.PictureBox();
+            this.picAdd11 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic58)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic37)).BeginInit();
@@ -149,7 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic82)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic73)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic83)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic64)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic84)).BeginInit();
@@ -163,8 +180,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic87)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic78)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic68)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic83)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd11)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -300,17 +336,6 @@
             this.pic28.TabIndex = 36;
             this.pic28.TabStop = false;
             this.pic28.Click += new System.EventHandler(this.pic28_Click);
-            // 
-            // pic18
-            // 
-            this.pic18.Image = ((System.Drawing.Image)(resources.GetObject("pic18.Image")));
-            this.pic18.Location = new System.Drawing.Point(3, 316);
-            this.pic18.Name = "pic18";
-            this.pic18.Size = new System.Drawing.Size(40, 36);
-            this.pic18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic18.TabIndex = 35;
-            this.pic18.TabStop = false;
-            this.pic18.Click += new System.EventHandler(this.pic18_Click);
             // 
             // pic57
             // 
@@ -785,17 +810,6 @@
             this.pic73.TabStop = false;
             this.pic73.Click += new System.EventHandler(this.pic73_Click);
             // 
-            // pic83
-            // 
-            this.pic83.Image = ((System.Drawing.Image)(resources.GetObject("pic83.Image")));
-            this.pic83.Location = new System.Drawing.Point(361, 92);
-            this.pic83.Name = "pic83";
-            this.pic83.Size = new System.Drawing.Size(40, 36);
-            this.pic83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic83.TabIndex = 48;
-            this.pic83.TabStop = false;
-            this.pic83.Click += new System.EventHandler(this.pic83_Click);
-            // 
             // pic64
             // 
             this.pic64.Image = ((System.Drawing.Image)(resources.GetObject("pic64.Image")));
@@ -939,17 +953,6 @@
             this.pic88.TabStop = false;
             this.pic88.Click += new System.EventHandler(this.pic88_Click);
             // 
-            // pic78
-            // 
-            this.pic78.Image = ((System.Drawing.Image)(resources.GetObject("pic78.Image")));
-            this.pic78.Location = new System.Drawing.Point(314, 316);
-            this.pic78.Name = "pic78";
-            this.pic78.Size = new System.Drawing.Size(40, 36);
-            this.pic78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic78.TabIndex = 62;
-            this.pic78.TabStop = false;
-            this.pic78.Click += new System.EventHandler(this.pic78_Click);
-            // 
             // pic68
             // 
             this.pic68.Image = ((System.Drawing.Image)(resources.GetObject("pic68.Image")));
@@ -961,10 +964,43 @@
             this.pic68.TabStop = false;
             this.pic68.Click += new System.EventHandler(this.pic68_Click);
             // 
+            // pic18
+            // 
+            this.pic18.Image = ((System.Drawing.Image)(resources.GetObject("pic18.Image")));
+            this.pic18.Location = new System.Drawing.Point(3, 316);
+            this.pic18.Name = "pic18";
+            this.pic18.Size = new System.Drawing.Size(40, 36);
+            this.pic18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic18.TabIndex = 35;
+            this.pic18.TabStop = false;
+            this.pic18.Click += new System.EventHandler(this.pic18_Click);
+            // 
+            // pic78
+            // 
+            this.pic78.Image = ((System.Drawing.Image)(resources.GetObject("pic78.Image")));
+            this.pic78.Location = new System.Drawing.Point(314, 316);
+            this.pic78.Name = "pic78";
+            this.pic78.Size = new System.Drawing.Size(40, 36);
+            this.pic78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic78.TabIndex = 62;
+            this.pic78.TabStop = false;
+            this.pic78.Click += new System.EventHandler(this.pic78_Click);
+            // 
+            // pic83
+            // 
+            this.pic83.Image = ((System.Drawing.Image)(resources.GetObject("pic83.Image")));
+            this.pic83.Location = new System.Drawing.Point(361, 92);
+            this.pic83.Name = "pic83";
+            this.pic83.Size = new System.Drawing.Size(40, 36);
+            this.pic83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic83.TabIndex = 48;
+            this.pic83.TabStop = false;
+            this.pic83.Click += new System.EventHandler(this.pic83_Click);
+            // 
             // btnQNext
             // 
             this.btnQNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnQNext.Location = new System.Drawing.Point(661, 40);
+            this.btnQNext.Location = new System.Drawing.Point(497, 37);
             this.btnQNext.Name = "btnQNext";
             this.btnQNext.Size = new System.Drawing.Size(102, 90);
             this.btnQNext.TabIndex = 2;
@@ -975,7 +1011,7 @@
             // btnAdd1
             // 
             this.btnAdd1.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd1.Location = new System.Drawing.Point(497, 175);
+            this.btnAdd1.Location = new System.Drawing.Point(497, 133);
             this.btnAdd1.Name = "btnAdd1";
             this.btnAdd1.Size = new System.Drawing.Size(266, 32);
             this.btnAdd1.TabIndex = 3;
@@ -983,55 +1019,282 @@
             this.btnAdd1.UseVisualStyleBackColor = false;
             this.btnAdd1.Click += new System.EventHandler(this.btnAdd1_Click);
             // 
-            // btnAdd2
+            // btnRotate
             // 
-            this.btnAdd2.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd2.Location = new System.Drawing.Point(497, 213);
-            this.btnAdd2.Name = "btnAdd2";
-            this.btnAdd2.Size = new System.Drawing.Size(266, 32);
-            this.btnAdd2.TabIndex = 4;
-            this.btnAdd2.Text = "Across";
-            this.btnAdd2.UseVisualStyleBackColor = false;
+            this.btnRotate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnRotate.Location = new System.Drawing.Point(713, 37);
+            this.btnRotate.Name = "btnRotate";
+            this.btnRotate.Size = new System.Drawing.Size(102, 90);
+            this.btnRotate.TabIndex = 8;
+            this.btnRotate.Text = "Rotate";
+            this.btnRotate.UseVisualStyleBackColor = false;
+            this.btnRotate.Click += new System.EventHandler(this.BtnRotate_Click);
             // 
-            // btnAdd3
+            // groupBox1
             // 
-            this.btnAdd3.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd3.Location = new System.Drawing.Point(497, 251);
-            this.btnAdd3.Name = "btnAdd3";
-            this.btnAdd3.Size = new System.Drawing.Size(266, 32);
-            this.btnAdd3.TabIndex = 5;
-            this.btnAdd3.Text = "Round";
-            this.btnAdd3.UseVisualStyleBackColor = false;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.lbl3);
+            this.groupBox1.Controls.Add(this.btnJoin);
+            this.groupBox1.Controls.Add(this.lbl2);
+            this.groupBox1.Controls.Add(this.lbl1);
+            this.groupBox1.Location = new System.Drawing.Point(497, 187);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(210, 215);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Details";
             // 
-            // btnAdd4
+            // btnJoin
             // 
-            this.btnAdd4.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd4.Location = new System.Drawing.Point(497, 289);
-            this.btnAdd4.Name = "btnAdd4";
-            this.btnAdd4.Size = new System.Drawing.Size(266, 32);
-            this.btnAdd4.TabIndex = 6;
-            this.btnAdd4.Text = "Straight";
-            this.btnAdd4.UseVisualStyleBackColor = false;
+            this.btnJoin.BackColor = System.Drawing.Color.Lime;
+            this.btnJoin.Location = new System.Drawing.Point(24, 99);
+            this.btnJoin.Name = "btnJoin";
+            this.btnJoin.Size = new System.Drawing.Size(93, 32);
+            this.btnJoin.TabIndex = 4;
+            this.btnJoin.Text = "JOIN";
+            this.btnJoin.UseVisualStyleBackColor = false;
             // 
-            // btnAdd5
+            // lbl2
             // 
-            this.btnAdd5.BackColor = System.Drawing.Color.Lime;
-            this.btnAdd5.Location = new System.Drawing.Point(497, 327);
-            this.btnAdd5.Name = "btnAdd5";
-            this.btnAdd5.Size = new System.Drawing.Size(266, 32);
-            this.btnAdd5.TabIndex = 7;
-            this.btnAdd5.Text = "Corner";
-            this.btnAdd5.UseVisualStyleBackColor = false;
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.Yellow;
+            this.lbl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl2.Location = new System.Drawing.Point(24, 50);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(84, 15);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.Text = "typeof(00) = null";
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.Yellow;
+            this.lbl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl1.Location = new System.Drawing.Point(24, 32);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(84, 15);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "typeof(00) = null";
+            // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.Color.Yellow;
+            this.lbl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl3.Location = new System.Drawing.Point(24, 76);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(47, 15);
+            this.lbl3.TabIndex = 5;
+            this.lbl3.Text = "fix = null";
+            // 
+            // btnSelect
+            // 
+            this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSelect.Location = new System.Drawing.Point(605, 37);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(102, 90);
+            this.btnSelect.TabIndex = 10;
+            this.btnSelect.Text = "select = OFF";
+            this.btnSelect.UseVisualStyleBackColor = false;
+            this.btnSelect.Click += new System.EventHandler(this.BtnSelect_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flowLayoutPanel1.Controls.Add(this.picAdd3);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd4);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd5);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd9);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd10);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd11);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd12);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd13);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd14);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd15);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd16);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd17);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd18);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd19);
+            this.flowLayoutPanel1.Controls.Add(this.picAdd20);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(726, 187);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(197, 216);
+            this.flowLayoutPanel1.TabIndex = 11;
+            // 
+            // picAdd12
+            // 
+            this.picAdd12.Image = ((System.Drawing.Image)(resources.GetObject("picAdd12.Image")));
+            this.picAdd12.Location = new System.Drawing.Point(95, 45);
+            this.picAdd12.Name = "picAdd12";
+            this.picAdd12.Size = new System.Drawing.Size(40, 36);
+            this.picAdd12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd12.TabIndex = 52;
+            this.picAdd12.TabStop = false;
+            this.picAdd12.Click += new System.EventHandler(this.PicAdd12_Click);
+            // 
+            // picAdd13
+            // 
+            this.picAdd13.Image = ((System.Drawing.Image)(resources.GetObject("picAdd13.Image")));
+            this.picAdd13.Location = new System.Drawing.Point(141, 45);
+            this.picAdd13.Name = "picAdd13";
+            this.picAdd13.Size = new System.Drawing.Size(40, 36);
+            this.picAdd13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd13.TabIndex = 53;
+            this.picAdd13.TabStop = false;
+            this.picAdd13.Click += new System.EventHandler(this.PicAdd13_Click);
+            // 
+            // picAdd14
+            // 
+            this.picAdd14.Image = ((System.Drawing.Image)(resources.GetObject("picAdd14.Image")));
+            this.picAdd14.Location = new System.Drawing.Point(3, 87);
+            this.picAdd14.Name = "picAdd14";
+            this.picAdd14.Size = new System.Drawing.Size(40, 36);
+            this.picAdd14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd14.TabIndex = 54;
+            this.picAdd14.TabStop = false;
+            this.picAdd14.Click += new System.EventHandler(this.PicAdd14_Click);
+            // 
+            // picAdd15
+            // 
+            this.picAdd15.Image = ((System.Drawing.Image)(resources.GetObject("picAdd15.Image")));
+            this.picAdd15.Location = new System.Drawing.Point(49, 87);
+            this.picAdd15.Name = "picAdd15";
+            this.picAdd15.Size = new System.Drawing.Size(40, 36);
+            this.picAdd15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd15.TabIndex = 55;
+            this.picAdd15.TabStop = false;
+            this.picAdd15.Click += new System.EventHandler(this.PicAdd15_Click);
+            // 
+            // picAdd16
+            // 
+            this.picAdd16.Image = ((System.Drawing.Image)(resources.GetObject("picAdd16.Image")));
+            this.picAdd16.Location = new System.Drawing.Point(95, 87);
+            this.picAdd16.Name = "picAdd16";
+            this.picAdd16.Size = new System.Drawing.Size(40, 36);
+            this.picAdd16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd16.TabIndex = 56;
+            this.picAdd16.TabStop = false;
+            this.picAdd16.Click += new System.EventHandler(this.PicAdd16_Click);
+            // 
+            // picAdd17
+            // 
+            this.picAdd17.Image = ((System.Drawing.Image)(resources.GetObject("picAdd17.Image")));
+            this.picAdd17.Location = new System.Drawing.Point(141, 87);
+            this.picAdd17.Name = "picAdd17";
+            this.picAdd17.Size = new System.Drawing.Size(40, 36);
+            this.picAdd17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd17.TabIndex = 57;
+            this.picAdd17.TabStop = false;
+            this.picAdd17.Click += new System.EventHandler(this.PicAdd17_Click);
+            // 
+            // picAdd18
+            // 
+            this.picAdd18.Image = ((System.Drawing.Image)(resources.GetObject("picAdd18.Image")));
+            this.picAdd18.Location = new System.Drawing.Point(3, 129);
+            this.picAdd18.Name = "picAdd18";
+            this.picAdd18.Size = new System.Drawing.Size(40, 36);
+            this.picAdd18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd18.TabIndex = 58;
+            this.picAdd18.TabStop = false;
+            this.picAdd18.Click += new System.EventHandler(this.PicAdd18_Click);
+            // 
+            // picAdd19
+            // 
+            this.picAdd19.Image = ((System.Drawing.Image)(resources.GetObject("picAdd19.Image")));
+            this.picAdd19.Location = new System.Drawing.Point(49, 129);
+            this.picAdd19.Name = "picAdd19";
+            this.picAdd19.Size = new System.Drawing.Size(40, 36);
+            this.picAdd19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd19.TabIndex = 59;
+            this.picAdd19.TabStop = false;
+            this.picAdd19.Click += new System.EventHandler(this.PicAdd19_Click);
+            // 
+            // picAdd20
+            // 
+            this.picAdd20.Image = ((System.Drawing.Image)(resources.GetObject("picAdd20.Image")));
+            this.picAdd20.Location = new System.Drawing.Point(95, 129);
+            this.picAdd20.Name = "picAdd20";
+            this.picAdd20.Size = new System.Drawing.Size(40, 36);
+            this.picAdd20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd20.TabIndex = 60;
+            this.picAdd20.TabStop = false;
+            this.picAdd20.Click += new System.EventHandler(this.PicAdd20_Click);
+            // 
+            // picAdd3
+            // 
+            this.picAdd3.Image = ((System.Drawing.Image)(resources.GetObject("picAdd3.Image")));
+            this.picAdd3.Location = new System.Drawing.Point(3, 3);
+            this.picAdd3.Name = "picAdd3";
+            this.picAdd3.Size = new System.Drawing.Size(40, 36);
+            this.picAdd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd3.TabIndex = 61;
+            this.picAdd3.TabStop = false;
+            this.picAdd3.Click += new System.EventHandler(this.PicAdd3_Click);
+            // 
+            // picAdd4
+            // 
+            this.picAdd4.Image = ((System.Drawing.Image)(resources.GetObject("picAdd4.Image")));
+            this.picAdd4.Location = new System.Drawing.Point(49, 3);
+            this.picAdd4.Name = "picAdd4";
+            this.picAdd4.Size = new System.Drawing.Size(40, 36);
+            this.picAdd4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd4.TabIndex = 62;
+            this.picAdd4.TabStop = false;
+            this.picAdd4.Click += new System.EventHandler(this.PicAdd4_Click);
+            // 
+            // picAdd5
+            // 
+            this.picAdd5.Image = ((System.Drawing.Image)(resources.GetObject("picAdd5.Image")));
+            this.picAdd5.Location = new System.Drawing.Point(95, 3);
+            this.picAdd5.Name = "picAdd5";
+            this.picAdd5.Size = new System.Drawing.Size(40, 36);
+            this.picAdd5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd5.TabIndex = 63;
+            this.picAdd5.TabStop = false;
+            this.picAdd5.Click += new System.EventHandler(this.PicAdd5_Click);
+            // 
+            // picAdd9
+            // 
+            this.picAdd9.Image = ((System.Drawing.Image)(resources.GetObject("picAdd9.Image")));
+            this.picAdd9.Location = new System.Drawing.Point(141, 3);
+            this.picAdd9.Name = "picAdd9";
+            this.picAdd9.Size = new System.Drawing.Size(40, 36);
+            this.picAdd9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd9.TabIndex = 64;
+            this.picAdd9.TabStop = false;
+            this.picAdd9.Click += new System.EventHandler(this.PicAdd9_Click);
+            // 
+            // picAdd10
+            // 
+            this.picAdd10.Image = ((System.Drawing.Image)(resources.GetObject("picAdd10.Image")));
+            this.picAdd10.Location = new System.Drawing.Point(3, 45);
+            this.picAdd10.Name = "picAdd10";
+            this.picAdd10.Size = new System.Drawing.Size(40, 36);
+            this.picAdd10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd10.TabIndex = 65;
+            this.picAdd10.TabStop = false;
+            this.picAdd10.Click += new System.EventHandler(this.PicAdd10_Click);
+            // 
+            // picAdd11
+            // 
+            this.picAdd11.Image = ((System.Drawing.Image)(resources.GetObject("picAdd11.Image")));
+            this.picAdd11.Location = new System.Drawing.Point(49, 45);
+            this.picAdd11.Name = "picAdd11";
+            this.picAdd11.Size = new System.Drawing.Size(40, 36);
+            this.picAdd11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdd11.TabIndex = 66;
+            this.picAdd11.TabStop = false;
+            this.picAdd11.Click += new System.EventHandler(this.PicAdd11_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAdd5);
-            this.Controls.Add(this.btnAdd4);
-            this.Controls.Add(this.btnAdd3);
-            this.Controls.Add(this.btnAdd2);
+            this.ClientSize = new System.Drawing.Size(946, 450);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.btnSelect);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnRotate);
             this.Controls.Add(this.btnAdd1);
             this.Controls.Add(this.btnQNext);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -1043,7 +1306,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic37)).EndInit();
@@ -1087,7 +1349,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic82)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic73)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic83)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic64)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic84)).EndInit();
@@ -1101,8 +1362,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic87)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic88)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic78)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic68)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic83)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1176,10 +1457,29 @@
         private System.Windows.Forms.PictureBox pic78;
         private System.Windows.Forms.Button btnQNext;
         private System.Windows.Forms.Button btnAdd1;
-        private System.Windows.Forms.Button btnAdd2;
-        private System.Windows.Forms.Button btnAdd3;
-        private System.Windows.Forms.Button btnAdd4;
-        private System.Windows.Forms.Button btnAdd5;
+        private System.Windows.Forms.Button btnRotate;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Button btnJoin;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox picAdd12;
+        private System.Windows.Forms.PictureBox picAdd13;
+        private System.Windows.Forms.PictureBox picAdd14;
+        private System.Windows.Forms.PictureBox picAdd15;
+        private System.Windows.Forms.PictureBox picAdd16;
+        private System.Windows.Forms.PictureBox picAdd17;
+        private System.Windows.Forms.PictureBox picAdd18;
+        private System.Windows.Forms.PictureBox picAdd19;
+        private System.Windows.Forms.PictureBox picAdd20;
+        private System.Windows.Forms.PictureBox picAdd3;
+        private System.Windows.Forms.PictureBox picAdd4;
+        private System.Windows.Forms.PictureBox picAdd5;
+        private System.Windows.Forms.PictureBox picAdd9;
+        private System.Windows.Forms.PictureBox picAdd10;
+        private System.Windows.Forms.PictureBox picAdd11;
     }
 }
 

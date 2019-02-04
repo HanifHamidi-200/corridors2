@@ -15,15 +15,51 @@ namespace DSERT
         private String msShuffle;
         private String msShuffle2;
         private int nNumber;
-        private bool mbPlumbing = false;
+        private bool mbPlumbing = true;
+        private int mnCol = 0, mnRow = 0;
 
+        private void fUpload(int nMode)
+        {
+            String sText = "ABCDEFGH";
+            String sText2 = sText.Substring(mnCol - 1,1) + Convert.ToString(mnRow);
+
+            switch (nMode)
+            {
+                case 1:
+                    txt1.Text = sText2;
+                    break;
+                case 2:
+                    txt2.Text = sText2;
+                    break;
+                case 3:
+                    txt3.Text = sText2;
+                    break;
+                case 4:
+                    txt4.Text = sText2;
+                    break;
+                case 5:
+                    txt5.Text = sText2;
+                    break;
+                default:
+                    txt6.Text = sText2;
+                    break;
+            }
+        }
         private void fClick(int nCol,int nRow)
         {
             int nPos = (nCol - 1) * 8 + nRow;
             String sTwo = "03";
 
-            fPlace(sTwo, nPos);
-            fUpdateDisplay();
+            if (mbPlumbing)
+            {
+                fPlace(sTwo, nPos);
+                fUpdateDisplay();
+            }
+            else
+            {
+                mnCol = nCol;
+                mnRow = nRow;
+            }
         }
 
         private void fSpawn(int nRow)
@@ -164,8 +200,9 @@ namespace DSERT
             txt2.Text = null;
             txt3.Text = null;
             txt4.Text = null;
-            txt4b.Text = null;
             txt5.Text = null;
+            txt6.Text = null;
+            txtName.Text = null;
 
             fUpdateDisplay();
         }
@@ -488,16 +525,7 @@ namespace DSERT
 
         private void fPlace(String sText, int nPos)
         {
-            if (nPos == 64)
-            {
-                msShuffle2 = msShuffle2.Substring(0, nPos * 2 - 2) + sText;
-
-            }
-            else
-            {
-                msShuffle2 = msShuffle2.Substring(0, nPos * 2 - 2) + sText + msShuffle2.Substring(nPos * 2, (64 - nPos) * 2);
-
-            }
+           msShuffle2 = msShuffle2.Substring(0, nPos * 2 - 2) + sText + msShuffle2.Substring(nPos * 2, (64 - nPos) * 2);
         }
 
         public Form1()
@@ -840,9 +868,62 @@ namespace DSERT
             fClick(8, 8);
         }
 
-        private void txt5_TextChanged(object sender, EventArgs e)
+        private void BtnUpload1_Click(object sender, EventArgs e)
         {
+            if (mnCol != 0)
+            {
+                fUpload(1);
+            }
+        }
 
+        private void BtnUpload2_Click(object sender, EventArgs e)
+        {
+            if (mnCol != 0)
+            {
+                fUpload(2);
+            }
+
+        }
+
+        private void BtnUpload3_Click(object sender, EventArgs e)
+        {
+            if (mnCol != 0)
+            {
+                fUpload(3);
+            }
+
+        }
+
+        private void BtnUpload4_Click(object sender, EventArgs e)
+        {
+            if (mnCol != 0)
+            {
+                fUpload(4);
+            }
+
+        }
+
+        private void BtnUpload5_Click(object sender, EventArgs e)
+        {
+            if (mnCol != 0)
+            { 
+                fUpload(5);
+            }
+
+        }
+
+        private void BtnUpload6_Click(object sender, EventArgs e)
+        {
+            if (mnCol != 0)
+            {
+                fUpload(6);
+            }
+
+        }
+
+        private void BtnPick_Click(object sender, EventArgs e)
+        {
+            mbPlumbing = false;
         }
     }
 }

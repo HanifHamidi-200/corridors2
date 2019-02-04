@@ -80,6 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons1\F arrow.png" />
     <Content Include="icons1\F corridor.png" />
     <Content Include="icons1\F NullGate.png" />
     <Content Include="icons1\F Type1A.png" />
@@ -88,6 +89,18 @@
     <Content Include="icons1\F Type2A.png" />
     <Content Include="icons1\F Type2B.png" />
     <Content Include="icons1\F Type2C.png" />
+    <Content Include="icons1\F Type3A.png" />
+    <Content Include="icons1\F Type3B.png" />
+    <Content Include="icons1\F Type3C.png" />
+    <Content Include="icons1\F Type4A.png" />
+    <Content Include="icons1\F Type4B.png" />
+    <Content Include="icons1\F Type4C.png" />
+    <Content Include="icons1\F Type5A.png" />
+    <Content Include="icons1\F Type5B.png" />
+    <Content Include="icons1\F Type5C.png" />
+    <Content Include="icons1\F Type6A.png" />
+    <Content Include="icons1\F Type6B.png" />
+    <Content Include="icons1\F Type6C.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
