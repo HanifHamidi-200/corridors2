@@ -28,6 +28,14 @@ namespace RFAKE
         private String msShuffle2;
         private int mnItem;
         private int mnFeeling;
+        private List<int> _time = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private List<int> _length = new List<int> { 0, 0 };
+        private List<int> _width = new List<int> { 0, 0 };
+        private List<int> _height = new List<int> { 0, 0 };
+
+
+
+
         private void fPeek(int nValue, int nRotate, ref PictureBox _pic2)
         {
             PictureBox picture1 = new PictureBox
@@ -189,11 +197,12 @@ namespace RFAKE
         {
             Random rnd1 = new Random();
             int nCount = rnd1.Next(4, 11);
-            int nPos,nSum,nVersion;
+            int nPos, nSum, nVersion;
             String sText;
             int nVersion2;
             int nCount2;
-            char sLetter1,sLetter2;
+            char sLetter1, sLetter2;
+            int nHalf, nAdd;
 
             mnCount = nCount;
             btnFake.Text = "FAKE" + Convert.ToString(mnFake);
@@ -223,7 +232,7 @@ namespace RFAKE
                             case 2:
                                 sText = "sword " + sText;
                                 break;
-                           default:
+                            default:
                                 sText = "cigarette " + sText;
                                 break;
                         }
@@ -244,23 +253,41 @@ namespace RFAKE
                                 sText = Convert.ToString(nCount2) + " tiger " + sText;
                                 break;
                         }
-                         break;
+                        break;
                     case 4:
                         sText = _text4[nVersion - 1];
                         sLetter1 = (char)(rnd1.Next(1, 27) + 64);
                         sLetter2 = (char)(rnd1.Next(1, 27) + 64);
                         sText = Convert.ToString(sLetter1) + Convert.ToString(sLetter2) + " " + sText;
-                             break;
+                        break;
                     default:
                         sText = _text5[nVersion - 1];
-                             break;
+                        break;
 
                 }
-                _item[i-1] = sText;
-              }
+                _item[i - 1] = sText;
+            }
 
             fBut();
             fCheck();
+
+            for (int i = 1; i <= 16; i++)
+            {
+                _time[i - 1] = rnd1.Next(1, 5);
+            }
+            _length[0] = rnd1.Next(1, 201);
+            nHalf=_length[0]/2;
+            nAdd = rnd1.Next(1, nHalf + 1);
+            _length[1] = _length[0] + nAdd;
+            _width[0] = rnd1.Next(1, 201);
+            nHalf = _width[0] / 2;
+            nAdd = rnd1.Next(1, nHalf + 1);
+            _width[1] = _width[0] + nAdd;
+            _height[0] = rnd1.Next(1, 201);
+            nHalf = _height[0] / 2;
+            nAdd = rnd1.Next(1, nHalf + 1);
+            _height[1] = _height[0] + nAdd;
+
             fUpdateDisplay();
 
             mnItem = rnd1.Next(1, 5);
@@ -331,6 +358,31 @@ namespace RFAKE
             }
             lst1.Sorted = true;
             lst1.Sorted = false;
+
+            lblTime1.Text = "T" + Convert.ToString(_time[0]);
+            lblTime2.Text = "T" + Convert.ToString(_time[1]);
+            lblTime3.Text = "T" + Convert.ToString(_time[2]);
+            lblTime4.Text = "T" + Convert.ToString(_time[3]);
+            lblTime5.Text = "T" + Convert.ToString(_time[4]);
+            lblTime6.Text = "T" + Convert.ToString(_time[5]);
+            lblTime7.Text = "T" + Convert.ToString(_time[6]);
+            lblTime8.Text = "T" + Convert.ToString(_time[7]);
+            lblTime9.Text = "T" + Convert.ToString(_time[8]);
+            lblTime10.Text = "T" + Convert.ToString(_time[9]);
+            lblTime11.Text = "T" + Convert.ToString(_time[10]);
+            lblTime12.Text = "T" + Convert.ToString(_time[11]);
+            lblTime13.Text = "T" + Convert.ToString(_time[12]);
+            lblTime14.Text = "T" + Convert.ToString(_time[13]);
+            lblTime15.Text = "T" + Convert.ToString(_time[14]);
+            lblTime16.Text = "T" + Convert.ToString(_time[15]);
+
+            lblLength1.Text = Convert.ToString(_length[0]);
+            lblLength2.Text ="extendsto="+ Convert.ToString(_length[0]);
+            lblWidth1.Text = Convert.ToString(_width[0]);
+            lblWidth2.Text = "extendsto=" + Convert.ToString(_width[0]);
+            lblHeight1.Text = Convert.ToString(_height[0]);
+            lblHeight2.Text = "extendsto=" + Convert.ToString(_height[0]);
+
         }
         public Form1()
         {
